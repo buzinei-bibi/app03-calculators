@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export default function Header({
   title = 'HOME',
@@ -15,7 +16,7 @@ export default function Header({
             {
               navigationLinks.map((link, index)=>{
                 return(
-                  <li key={index}><a href={link.link} className="hover:text-indigo-500">{link.name}</a></li>
+                  <li key={index}><Link to={link.link} className="hover:text-indigo-500">{link.name}</Link></li>
                 )
               })
             }
