@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <div className="flex flex-col h-screen overflow-hidden">
         <Header
-          title="LOGOTIPO"
+          title=""
           navigationLinks={[
             { name: "HOME", link: "/" },
             { name: "TINTA", link: "/tinta" },
@@ -24,7 +24,7 @@ function App() {
             { name: "ESCOLAR", link: "/escolar" },
           ]}
         />
-        <main className="flex-1 bg-gray-100 flex items-center justify-center p-4 overflow-y-auto">
+        <main className="flex-1 bg-orange-200 flex items-center justify-center p-4 overflow-y-auto">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/tinta" element={<Tinta />} />
